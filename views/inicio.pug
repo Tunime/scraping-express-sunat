@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    form(name="add-estimation", method="post",action="/test/icex")
+        div.input
+            span.label Fecha de inicio
+            input(type="text", name="FecInicial", id="FecInicial")
+        div.input
+            span.label Fecha final
+            input(type="text", name="FecFinal", id="FecFinal")
+        div.input
+            span.label Partida arancelaria
+            input(type="text", name="codigo", id="codigo")
+        div.actions
+            input(type="submit", value="buscar")

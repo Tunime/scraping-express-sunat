@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  -var local_data =data,chin=18,j=0,coco;  
+  table
+    for bamo,i in local_data
+      if i==0 || 0==i-coco
+        tr
+        -j=j+1;
+        -coco=chin*j;
+      td= bamo
+
